@@ -48,22 +48,53 @@ The goal of this project is to design, deploy, and connect all three layers into
 
 ### Part 2: Logic Tier
 
-- Creating the Lambda Function that will fetch data from the Database  
+- Creating the Lambda Function that will fetch data from the Database:  
 <img src="part2-workflow-diagrams/part2-workflow-diagram1.png" width="600">
 
-- Create a new API in API Gateway to carry requests to the Lambda Function  
+- Create a new API in API Gateway to carry requests to the Lambda Function:  
 <img src="part2-workflow-diagrams/part2-workflow-diagram2.png" width="600">
 
-- Create API resource that will handle the API requests  
+- Create API resource that will handle the API requests:  
 <img src="part2-workflow-diagrams/part2-workflow-diagram3.png" width="600">
 
-- Create the API method that allows things to be done with the resource  
+- Create the API method that allows things to be done with the resource:  
 <img src="part2-workflow-diagrams/part2-workflow-diagram4.png" width="600">
 
-- Deploy API and make accessible through a public endpoint  
+- Deploy API and make accessible through a public endpoint:  
 <img src="part2-workflow-diagrams/part2-workflow-diagram5.png" width="600">
 
-- Logic Tier Completed  
+- Logic Tier Completed:  
 <img src="part2-workflow-diagrams/part2-workflow-diagram6.png" width="500">
+
+---
+
+### Part 3: Data Tier
+
+- Create DynamoDB table to store user data:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram1.png" width="700">
+
+- Adding sample data to the DynamoDB table:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram2.png" width="700">
+
+- Lambda function created like in Logic Tier:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram3.png" width="700">
+
+- Implementing Lambda Function Code like in Logic Tier:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram4.png" width="700">
+
+- Testing the Lambda Function with Lambda Function Test:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram5.png" width="700">
+
+- Grant DynamoDB access to Lambda:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram6.png" width="700">
+
+- Testing Lambda Function again after DB access:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram7.png" width="700">
+
+- Final Workflow of Data Tier:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram8.png" width="700">
+
+- Data Tier Completed:  
+<img src="part3-workflow-diagrams/part3-workflow-diagram9.png" width="500">
 
 ---
