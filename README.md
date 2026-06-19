@@ -20,30 +20,50 @@ The goal of this project is to design, deploy, and connect all three layers into
 
 ### Part 1: Presentation Tier
 
-- Creating the S3 Bucket:
-![Part1](part1-workflow-diagrams/part1-workflow-diagram1.png)
+- Creating the S3 Bucket:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram1.png" width="700">
 
-- Upload website files to the S3 Bucket:
-![Part2](part1-workflow-diagrams/part1-workflow-diagram2.png)
+- Upload website files to the S3 Bucket:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram2.png" width="700">
 
-- Setting up CloudFront Distribution to host website:
-![Part3](part1-workflow-diagrams/part1-workflow-diagram3.png)
+- Setting up CloudFront Distribution to host website:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram3.png" width="700">
 
-- Verifying Cloud Distribution is working:
-![Part4](part1-workflow-diagrams/part1-workflow-diagram4.png)
+- Verifying Cloud Distribution is working:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram4.png" width="700">
 
-- Updating CloudFront Settings for permission access:
-![Part5](part1-workflow-diagrams/part1-workflow-diagram5.png)
+- Updating CloudFront Settings for permission access:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram5.png" width="700">
 
-- Updating S3 Bucket permission settings:
-![Part6](part1-workflow-diagrams/part1-workflow-diagram6.png)
+- Updating S3 Bucket permission settings:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram6.png" width="700">
 
-- Final Overview of Presentation Tier:
-![Part7](part1-workflow-diagrams/part1-workflow-diagram7.png)
+- Final Overview of Presentation Tier:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram7.png" width="700">
 
-- Presentation Tier Completed:
-![Part8](part1-workflow-diagrams/part1-workflow-diagram8.png)
+- Presentation Tier Completed:  
+<img src="part1-workflow-diagrams/part1-workflow-diagram8.png" width="500">
 
+---
 
+### Part 2: Logic Tier
 
+- Creating the Lambda Function that will fetch data from the Database  
+<img src="part2-workflow-diagrams/part2-workflow-diagram1.png" width="600">
 
+- Create a new API in API Gateway to carry requests to the Lambda Function  
+<img src="part2-workflow-diagrams/part2-workflow-diagram2.png" width="600">
+
+- Create API resource that will handle the API requests  
+<img src="part2-workflow-diagrams/part2-workflow-diagram3.png" width="600">
+
+- Create the API method that allows things to be done with the resource  
+<img src="part2-workflow-diagrams/part2-workflow-diagram4.png" width="600">
+
+- Deploy API and make accessible through a public endpoint  
+<img src="part2-workflow-diagrams/part2-workflow-diagram5.png" width="600">
+
+- Logic Tier Completed  
+<img src="part2-workflow-diagrams/part2-workflow-diagram6.png" width="500">
+
+---
