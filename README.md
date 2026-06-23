@@ -41,9 +41,6 @@ The goal of this project is to design, deploy, and connect all three layers into
 - Final Overview of Presentation Tier:  
 <img src="part1-workflow-diagrams/part1-workflow-diagram7.png" width="700">
 
-- Presentation Tier Completed:  
-<img src="part1-workflow-diagrams/part1-workflow-diagram8.png" width="500">
-
 ---
 
 ### Part 2: Logic Tier
@@ -62,9 +59,6 @@ The goal of this project is to design, deploy, and connect all three layers into
 
 - Deploy API and make accessible through a public endpoint:  
 <img src="part2-workflow-diagrams/part2-workflow-diagram5.png" width="600">
-
-- Logic Tier Completed:  
-<img src="part2-workflow-diagrams/part2-workflow-diagram6.png" width="500">
 
 ---
 
@@ -94,7 +88,49 @@ The goal of this project is to design, deploy, and connect all three layers into
 - Final Workflow of Data Tier:  
 <img src="part3-workflow-diagrams/part3-workflow-diagram8.png" width="700">
 
+---
+
+### Part 4: Integrating all Tiers Together
+
+- Presentation Tier Completed:  
+<img src="part4-workflow-diagrams/part4-workflow-diagram1.png" width="500">
+
+- Logic Tier Completed:  
+<img src="part4-workflow-diagrams/part4-workflow-diagram2.png" width="500">
+
 - Data Tier Completed:  
-<img src="part3-workflow-diagrams/part3-workflow-diagram9.png" width="500">
+<img src="part4-workflow-diagrams/part4-workflow-diagram3.png" width="500">
+
+- Completed project architecture overivew  
+<img src="part4-workflow-diagrams/part4-workflow-diagram4.png" width="500">
 
 ---
+
+## Tools & AWS Services Used
+
+- **Amazon S3** — Static website hosting for the Presentation Tier  
+- **Amazon CloudFront** — Global CDN for secure, low‑latency content delivery  
+- **AWS Lambda** — Serverless compute for backend logic  
+- **Amazon API Gateway** — REST API layer connecting frontend to backend  
+- **Amazon DynamoDB** — NoSQL database for storing and retrieving user data  
+- **AWS IAM** — Identity & Access Management for secure permissions  
+- **Amazon CloudWatch** — Logging, monitoring, and debugging  
+- **AWS SDK for JavaScript** — Used inside Lambda to query DynamoDB  
+- **AWS Management Console** — Deployment, configuration, and testing of all services  
+
+---
+
+## What I Learned
+
+Building this three‑tier serverless application strengthened my understanding of how modern cloud systems are designed, deployed, and connected. Key takeaways include:
+
+- **Serverless Architecture Design** — Gained hands‑on experience structuring a fully serverless application using S3, CloudFront, API Gateway, Lambda, and DynamoDB.
+- **Frontend–Backend Integration** — Learned how static websites securely communicate with backend APIs through CloudFront and API Gateway.
+- **Lambda Development & Debugging** — Improved skills writing, testing, and troubleshooting Lambda functions, including handling permissions, environment variables, and AWS SDK calls.
+- **IAM Permissions & Security** — Understood how IAM roles and policies control access between services (Lambda → DynamoDB, CloudFront → S3).
+- **API Gateway Configuration** — Learned how to create resources, methods, integrations, and deployments to expose Lambda functions through public endpoints.
+- **DynamoDB Access Patterns** — Practiced reading data from DynamoDB using the AWS SDK and structuring tables for fast, scalable lookups.
+- **CloudFront Distribution Behavior** — Gained experience configuring caching, origins, and permissions to securely serve a global website.
+- **End‑to‑End Testing** — Validated each tier independently and then tested the full workflow from CloudFront → API Gateway → Lambda → DynamoDB.
+
+This project helped me understand how real cloud applications are built and how AWS services interact to create scalable, secure, and cost‑efficient architectures.
